@@ -1,4 +1,4 @@
-# Lo7at Finder 🚗
+h# Lo7at Finder 🚗
 
 **بوت تيليجرام لمتابعة مزادات اللوحات السعودية على أبشر في الوقت الفعلي**
 Real-time Telegram bot for Saudi license plate auction monitoring on Absher
@@ -25,7 +25,7 @@ The bot continuously monitors Absher license plate auctions and sends instant Te
 
           ## جرب البوت / Try it now
 
-          👉 [@Lo7atSA](https://t.me/Lo7atSA)
+          👉 [@Lo7atSA_bot](https://t.me/Lo7atSA_bot)
 
           ---
 
