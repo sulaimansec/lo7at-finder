@@ -11,32 +11,42 @@ Real-time Telegram bot for Saudi license plate auction monitoring on Absher
 
 The bot continuously monitors Absher license plate auctions and sends instant Telegram alerts when a plate matching your criteria is listed.
 
-**يراقب:**
-- نمط اللوحة (حروف وأرقام محددة)
-- - السعر (يرسل فقط ضمن ميزانيتك)
-  - - أنواع اللوحات (خصوصي، نقل، دراجة)
+**أنماط البحث المدعومة:**
+- `س ل م 11` — حروف محددة + رقم محدد
+- - `س ل م` — حروف محددة + أي رقم
+  - - `11` — أي حروف + رقم محدد
    
-    - **Monitors:**
-    - - Plate pattern (specific letters & numbers)
-      - - Price range (alerts only within your budget)
-        - - Plate types (private, transport, motorcycle)
+    - **Supported search patterns:**
+    - - `S L M 11` — specific letters + specific number
+      - - `S L M` — specific letters + any number
+        - - `11` — any letters + specific number
          
           - ---
 
-          ## جرب البوت / Try it now
+          ## مميزات البريميوم / Premium Features ⭐️
 
-          👉 [@Lo7atSA_bot](https://t.me/Lo7atSA_bot)
+          - لوحات غير محدودة
+          - - تنبيه قبل 3 ساعات من انتهاء المزاد 🚨
+            - - تنبيه قبل 15 دقيقة من الانتهاء
+              - - تنبيه فوري عند كل ارتفاع في السومة 📈
+                - - إحصائيات تفصيلية لكل لوحة 📊
+                 
+                  - ---
 
-          ---
+                  ## جرب البوت / Try it now
 
-          ## التقنيات / Tech
+                  👉 [@Lo7atSA_bot](https://t.me/Lo7atSA_bot)
 
-          - Python 3
-          - - Telegram Bot API
-            - - Deployed 24/7 on Linux VPS
-             
-              - ---
+                  ---
 
-              > Source code is private — this repo documents the project only.
-              > >
-              > > > Built by [Sulaiman Ahmed](https://iamsulaiman.dev)
+                  ## التقنيات / Tech
+
+                  - Python 3
+                  - - Telegram Bot API
+                    - - Deployed 24/7 on Linux VPS (systemd)
+                     
+                      - ---
+
+                      > Source code is private — this repo documents the project only.
+                      > >
+                      > >> Built by [Sulaiman Ahmed](https://iamsulaiman.dev)
