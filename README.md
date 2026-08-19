@@ -1,52 +1,81 @@
 # Lo7at Finder 🚗
+> بوت تيليجرام لمتابعة مزادات اللوحات السعودية على أبشر
+>
+> Real-time Telegram bot for Saudi license plate auction monitoring on Absher
 
-**بوت تيليجرام لمتابعة مزادات اللوحات السعودية على أبشر في الوقت الفعلي**
-Real-time Telegram bot for Saudi license plate auction monitoring on Absher
+<br>
+
+## فكرة المشروع / The Idea
+
+مزادات لوحات السيارات على أبشر تمشي بسرعة — لوحة اهتمامك تنزل وأنت ما دري، أو تنتهي وأنت ما لحقت.
+
+**Lo7at Finder** يراقب المزادات بدالك ويرسل لك إشعار فوري على تيليجرام بمجرد ما ينزل لوحة تطابق اهتمامك.
+
+> Plate auctions on Absher move fast — your target plate lists and closes before you notice.
+> Lo7at Finder watches for you and pings you on Telegram the moment a matching plate appears.
+
+<br>
+
+## كيف يشتغل / How It Works
+
+```
+أبشر  ──►  Lo7at Engine  ──►  Telegram
+Absher      (monitoring)       (alerts)
+```
+
+1. البوت يراقب منصة أبشر بشكل مستمر للوحات الجديدة
+2. يطابق كل لوحة جديدة مع قوائم المتابعة الخاصة بكل مستخدم
+3. عند التطابق يرسل إشعار فوري على تيليجرام
+
+> The bot continuously monitors Absher for new plate listings, matches each one against each user's watchlist, and fires an instant Telegram alert on a match.
+
+<br>
+
+## أنماط البحث / Search Patterns
+
+ممكن تتابع لوحة بأكثر من طريقة:
+
+| المثال | المعنى |
+|--------|--------|
+| `س ل م 11` | حروف محددة + رقم محدد |
+| `س ل م` | حروف محددة + أي رقم |
+| `11` | أي حروف + رقم محدد |
+
+<br>
+
+## المميزات / Features
+
+**مجاني / Free**
+- متابعة لوحة واحدة
+- إشعار فوري عند نزول اللوحة
+
+**بريميوم ⭐️ / Premium**
+- لوحات غير محدودة
+- تنبيه قبل 3 ساعات من انتهاء المزاد
+- تنبيه قبل 15 دقيقة من الانتهاء
+- إشعار فوري عند كل ارتفاع في السومة 📈
+- إحصائيات تفصيلية لكل لوحة 📊
+
+<br>
+
+## جرب الحين / Try it now
+
+<a href="https://t.me/Lo7atSA_bot">
+  <img src="https://img.shields.io/badge/Telegram-@Lo7atSA__bot-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="@Lo7atSA_bot"/>
+</a>
+
+<br><br>
+
+## التقنيات / Tech Stack
+
+- **Python 3** — core engine
+- **Telegram Bot API** — user interface & alerts
+- **Linux VPS** — deployed 24/7 via systemd
+
+<br>
 
 ---
 
-## وش يسوي؟ / What does it do?
-
-يراقب البوت مزادات اللوحات على منصة أبشر ويرسل إشعار فوري على تيليجرام بمجرد نزول لوحة تطابق اهتماماتك.
-
-The bot continuously monitors Absher license plate auctions and sends instant Telegram alerts when a plate matching your criteria is listed.
-
-**أنماط البحث المدعومة:**
-- `س ل م 11` — حروف محددة + رقم محدد
-- - `س ل م` — حروف محددة + أي رقم
-  - - `11` — أي حروف + رقم محدد
-   
-    - **Supported search patterns:**
-    - - `S L M 11` — specific letters + specific number
-      - - `S L M` — specific letters + any number
-        - - `11` — any letters + specific number
-         
-          - ---
-
-          ## مميزات البريميوم / Premium Features ⭐️
-
-          - لوحات غير محدودة
-          - - تنبيه قبل 3 ساعات من انتهاء المزاد 🚨
-            - - تنبيه قبل 15 دقيقة من الانتهاء
-              - - تنبيه فوري عند كل ارتفاع في السومة 📈
-                - - إحصائيات تفصيلية لكل لوحة 📊
-                 
-                  - ---
-
-                  ## جرب البوت / Try it now
-
-                  👉 [@Lo7atSA_bot](https://t.me/Lo7atSA_bot)
-
-                  ---
-
-                  ## التقنيات / Tech
-
-                  - Python 3
-                  - - Telegram Bot API
-                    - - Deployed 24/7 on Linux VPS (systemd)
-                     
-                      - ---
-
-                      > Source code is private — this repo documents the project only.
-                      > >
-                      > >> Built by [Sulaiman Ahmed](https://iamsulaiman.dev)
+> 🔒 **Source code is private.** The implementation details and scraping logic are kept confidential to protect the integrity of the service. This repo documents the project concept, features, and behavior only.
+>
+> Built by [Sulaiman Ahmed](https://iamsulaiman.dev)
